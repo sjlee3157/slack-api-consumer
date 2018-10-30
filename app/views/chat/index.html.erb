@@ -4,7 +4,7 @@
     <ul>
       <% @channels.each do |channel| %>
         <li>
-          <%= channel["name"] %>
+          <%= link_to channel.name, chat_new_path(channel.name) %>
         </li>
       <% end %>
     </ul>
